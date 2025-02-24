@@ -60,7 +60,7 @@ echo "-----------------------------"
 echo " Change Harbor configuration "
 echo "-----------------------------"
 sudo sed -i "s/hostname: reg.mydomain.com/hostname: ${harborHostname}/g" /root/harbor/harbor.yml
-sudo sudo sed -i "s/  port: 443/#  port: 443/g" /root/harbor/harbor.yml
+sudo sed -i "s/  port: 443/#  port: 443/g" /root/harbor/harbor.yml
 sudo sed -i "s/https:/#https:/g" /root/harbor/harbor.yml
 sudo sed -i "s/  certificate: \/your\/certificate\/path/#  certificate: \/your\/certificate\/path/g" /root/harbor/harbor.yml
 sudo sed -i "s/  private_key: \/your\/private\/key\/path/#  private_key: \/your\/private\/key\/path/g" /root/harbor/harbor.yml
