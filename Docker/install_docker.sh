@@ -35,3 +35,7 @@ echo "----------------------"
 echo " Check Docker version "
 echo "----------------------"
 sudo docker --version
+echo "--------------------------------"
+echo " Create docker container folder "
+echo "--------------------------------"
+sudo mkdir /docker
