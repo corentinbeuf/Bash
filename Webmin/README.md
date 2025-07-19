@@ -41,12 +41,22 @@ sudo systemctl enable webmin
 
 ### Scripts d'installation
 - [Bash](https://raw.githubusercontent.com/corentinbeuf/Bash/main/Webmin/install_webmin.sh)
-{.links-list}
 
 ## Configuration
+- Aucune configuration spécifique à apporter.
 
 ## Sauvegarde
+- Aucune sauvegarde nécessaire.
 
 ## Restauration
+- Pas de restauration du service car aucune sauvegarde n'est réalisée.
 
 ## Mise à jour
+- Mettre à jour les sources du serveur.
+```bash
+sudo apt-get update
+```
+- Installer les paquets à mettre à jour.
+```bash
+sudo apt-get upgrade -y
+```
