@@ -118,10 +118,29 @@ sudo systemctl restart bind9
 
 ### Scripts
 - [Bash](https://raw.githubusercontent.com/corentinbeuf/Bash/main/Bind/install_bind.sh)
-{.links-list}
 
 ## Sauvegarde
+- Sauvegarder le dossier "**/etc/bind**" où toutes les données sont présentes.
+```bash
+rsync -aqz /etc/bind/ user@192.168.1.1:/bind
+```
 
 ## Restauration
+- Copier les données depuis votre serveur de sauvegarde sur votre serveur Bind.
+```bash
+sudo scp -rp user@192.168.1.1:/bind/ /etc/bind
+```
+- Redémarrer le service "**bind9**".
+```bash
+sudo systemctl restart bind9
+```
 
 ## Mise à jour
+- Mettre à jour les sources du serveur.
+```bash
+sudo apt-get update
+```
+- Installer les paquets à mettre à jour.
+```bash
+sudo apt-get upgrade -y
+```
