@@ -74,7 +74,6 @@ sudo docker stop ...
 sudo scp -rp user@192.168.1.1:/docker/container/ /docker
 ```
 - Redémarrer vos conteneurs.
-- Arrêter tous les conteneurs en cours d'exécution sur votre serveur.
 ```bash
 sudo docker restart ...
 ```
