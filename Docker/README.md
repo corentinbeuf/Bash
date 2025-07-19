@@ -51,7 +51,7 @@ sudo mkdir -p /docker/nom_conteneur
 ```
 
 ## Sauvegarde
-- Sauvegarder le dossier "**/docker**" où toutes les données sont présentes.$
+- Sauvegarder le dossier "**/docker**" où toutes les données sont présentes.
 ```bash
 rsync -aqz /docker/ user@192.168.1.1:/docker/container
 ```
